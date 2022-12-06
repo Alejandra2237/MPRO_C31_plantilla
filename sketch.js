@@ -22,30 +22,32 @@ function preload(){
 function setup() {
   createCanvas(600, 400);
   
-//Sprite del jugador
+//SPRITE DEL JUGADOR
   player = createSprite(300, 200, 10, 10);
   player.shapeColor="#37A926";
 
-//Límites del juego superior e inferior
+//LÍMITES DEL JUEGO SUPERIOR E INFERIOR
   lowerWall= createSprite(300,395,1200,10);
   lowerWall.shapeColor="#F36C0F";
   upperWall= createSprite(550,5,1200,10);
   upperWall.shapeColor="#F36C0F";
 
-//Límites extremo izquierdo 
+//LÍMITES EXTREMO IZQUIERDO
   leftWallup= createSprite(5,72,10,122);
   leftWallup.shapeColor="#44C96C";
   leftWalldown= createSprite(5,322,10,132);
   leftWalldown.shapeColor="#44C96C";
 
-//Límites extremo derecho
-  
-  
+//LÍMITES EXTREMO DERECHO
 
-// Paredes horizontales izquierdas
-  horizontalLeft1 = createSprite(75,160,150,50);
+/*rightWallup.shapeColor="#44C96C";
+
+rightWalldown.shapeColor="#44C96C";*/
+
+// PAREDES HORIZONTALES IZQUIERDAS
+  horizontalLeft1 = createSprite(75,157,150,45);
   horizontalLeft1.shapeColor="#CAFDFF";
-  horizontalLeft2 = createSprite(75,230,150,50);
+  horizontalLeft2 = createSprite(75,233,150,45);
   horizontalLeft2.shapeColor="#E963C2";
   horizontalLeft3 = createSprite(200,40,120,20);
   horizontalLeft3.shapeColor="#F13652";
@@ -62,10 +64,27 @@ function setup() {
   horizontalLeft9 = createSprite(150,375,230,25);
   horizontalLeft9.shapeColor="#21C3D8";
 
-//Paredes horizontales Derechas
-  
+//PAREDES HORIZONTALES DERECHAS
 
-//Paredes verticales izquierdas
+  /*horizontalRight1.shapeColor="#CAFDFF";
+
+  horizontalRight2.shapeColor="#E963C2";
+
+  horizontalRight3.shapeColor="#F13652";
+
+  horizontalRight4.shapeColor="#F8B700";
+  
+  horizontalRight5.shapeColor="#1F9781";
+
+  horizontalRight6.shapeColor="#823589";
+
+  horizontalRight7.shapeColor="#823589";
+
+  horizontalRight8.shapeColor="#F13652";
+
+  horizontalRight9.shapeColor="#21C3D8";*/
+
+//PAREDES VERTICALES IZQUIERDAS
   verticalLeft1 = createSprite(190,200,20,90);
   verticalLeft1.shapeColor="#44C96C";
   verticalLeft2 = createSprite(240,200,20,120);
@@ -75,11 +94,18 @@ function setup() {
   verticalLeft4 = createSprite(180,348,25,30);
   verticalLeft4.shapeColor="#F8B700";
 
-//Paredes verticales derechas
-  
+//PAREDES VERTICALES DERECHAS
+
+  /*verticalRight1.shapeColor="#44C96C";
+
+  verticalRight2.shapeColor="#1F9781";
+
+  verticalRight3.shapeColor="#823589";
+
+  verticalRight4.shapeColor="#F8B700";*/
   
 
-//Sprites medios
+//PAREDES MEDIAS
   upperMiddle1 = createSprite(300,32,20,45);
   upperMiddle1.shapeColor="#E963C2";
   upperMiddle2 = createSprite(300,85,120,20);
@@ -95,19 +121,23 @@ function setup() {
   upperMiddle7 = createSprite(300,360,20,30);
   upperMiddle7.shapeColor="#F36C0F";
   
-//Sprites cuadros izquierda
+//SPRITES CUADROS IZQUIERDA
+
   squareLeft1 = createSprite(75,73,80,80);
   squareLeft1.shapeColor="#865797";
   squareLeft2 = createSprite(165,65,50,30);
   squareLeft2.shapeColor="#F13652";
 
-//Sprites cuadrados derecha
-  
+//SPRITES CUADROS DERECHA
 
-//Creación de grupo
+  /*squareRight1.shapeColor="#865797";
+
+  squareRight2.shapeColor="#F13652";*/
+
+//CREACIÓN DE GRUPO WALL
   wallsGroup = createGroup();
 
-//Agrupar los elementos
+//AGRUPAR LOS ELEMENTOS
   wallsGroup.add(lowerWall);
   wallsGroup.add(upperWall);
   wallsGroup.add(leftWallup);
