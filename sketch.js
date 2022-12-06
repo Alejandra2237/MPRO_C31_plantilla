@@ -142,6 +142,7 @@ rightWalldown.shapeColor="#44C96C";*/
   wallsGroup.add(upperWall);
   wallsGroup.add(leftWallup);
   wallsGroup.add(leftWalldown);
+
   wallsGroup.add(horizontalLeft1);
   wallsGroup.add(horizontalLeft2);
   wallsGroup.add(horizontalLeft3);
@@ -151,10 +152,12 @@ rightWalldown.shapeColor="#44C96C";*/
   wallsGroup.add(horizontalLeft7);
   wallsGroup.add(horizontalLeft8);
   wallsGroup.add(horizontalLeft9);
+
   wallsGroup.add(verticalLeft1);
   wallsGroup.add(verticalLeft2);
   wallsGroup.add(verticalLeft3);
   wallsGroup.add(verticalLeft4);
+
   wallsGroup.add(upperMiddle1);
   wallsGroup.add(upperMiddle2);
   wallsGroup.add(upperMiddle3);
@@ -165,6 +168,7 @@ rightWalldown.shapeColor="#44C96C";*/
   wallsGroup.add(squareLeft1);
   wallsGroup.add(squareLeft2);
 
+  
 }
 
 
